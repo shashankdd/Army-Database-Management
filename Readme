@@ -1,0 +1,26 @@
+Soldier Management System
+This README file provides a brief overview of the Soldier Management System. The system is designed to store and manage data related to soldiers in the Indian Army.
+
+Database Tables
+
+The system uses the following tables to store data:
+
+Soldier: Stores soldier information such as ID, name, rank, date of joining, date of birth, date of death (if applicable), birth place pincode, sex, height, weight, chest size, unique identifier (combination of ID, name and birth place pincode), and primary key (combination of ID and birth place pincode).
+Squad: Stores squad information such as battalion name, captain ID, year of formation, and total capacity.
+LOCATIONS: Stores location information such as pincode, district, state, and country.
+visited: Stores soldier visit information such as soldier ID, pincode visited, date of visit, and reason for visit.
+War: Stores war information such as pincode of the war zone, status of the war (0 - Inactive, 1 - Active, 2 - Won), and date of the war.
+swork: Stores soldier work information such as type of work (Soldier, Havildar, Lieutenant, etc.) and salary.
+posting: Stores soldier posting information such as soldier ID, pincode of the posting location, and date of posting.
+SoldierStatus: Stores soldier status information such as soldier ID, alive status (1 - Alive, 0 - Dead), date of death (if applicable), and pincode of the place of death (if applicable).
+MEDAL: Stores information about medals awarded (name of the medal).
+WEAPONS: Stores information about weapons (weapon ID and name).
+assign: Stores soldier assignment information such as soldier ID and type of work (Soldier, Havildar, Lieutenant, etc.).
+inventory: Stores inventory information such as battalion name and soldier ID (foreign keys referencing Squad and Soldier tables respectively).
+Sample Data
+
+The schema includes sample data for each table. Here are a few examples:
+
+Soldier table: contains information about soldiers such as Arjun Pratap (ID: 19339), rank (Soldier), date of joining (15-APR-2012), date of birth (23-MAY-1987), etc.
+LOCATIONS table: contains information about locations such as Allahabad (pincode: 382422), district (Allahabad), state (Uttar Pradesh), and country (India).
+War table: contains information about wars such as a war zone with pincode 382429 that is currently active (status: 1) since 17-MAR-2003.
